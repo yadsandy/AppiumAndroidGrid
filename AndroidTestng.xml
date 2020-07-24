@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test
+		name="com.naukrigulf.androidApp.testSuite.TC_RMJ.TC_RMJ_002_CheckRMJForNormalUser"
+		preserve-order="true">
+		<parameter name="udid" value="emulator-5554"/>
+		<classes>
+			<class name="coreAndroid.TC_Execution">
+				<methods>
+					<include name="TC_Execution_001" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test
+		name="com.naukrigulf.androidApp.testSuite.TC_RMJ.TC_RMJ_001_CheckForP0User"
+		preserve-order="true">
+		<parameter name="udid" value="emulator-5556"/>
+		<classes>
+			<class name="coreAndroid.TC_Execution">
+				<methods>
+					<include name="TC_Execution_002" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
